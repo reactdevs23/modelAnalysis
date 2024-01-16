@@ -15,7 +15,7 @@
   transform: translateX(-50%);
   top: calc(100% + 7px);
 
-  z-index: 5;
+  z-index: 60;
   background: #fff;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

@@ -8,7 +8,7 @@ function App() {
     <>
       <section className="py-[38px] relative">
         <div className="max-w-[800px] w-full mx-auto px-3 relative z-20">
-          <div className="flex justify-center -mx-10 z-50 relative">
+          <div className="flex justify-center -mx-10">
             <ModelAnalysis1 />
 
             <ModelAnalysis2 />

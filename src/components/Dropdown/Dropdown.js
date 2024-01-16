@@ -20,7 +20,7 @@ const DropDown = ({ dropdownItems, setCurrentItem, currentItem, textSize }) => {
   return (
     <div
       ref={dropdownRef}
-      className="text-black w-full !p-2 font-normal border border-black-1200 font-Poppins text-base bg-transparent rounded-lg border-none focus:ring-0 relative cursor-pointer bg-white 	"
+      className="text-black w-full  !p-2 font-normal border border-black-1200 font-Poppins text-base bg-transparent rounded-lg border-none focus:ring-0 relative  cursor-pointer bg-white 	"
       onClick={handleDropdown}
     >
       <div className="flex justify-between w-full">
@@ -39,7 +39,7 @@ const DropDown = ({ dropdownItems, setCurrentItem, currentItem, textSize }) => {
         />
       </div>
       {dropdown && (
-        <div className={styles.dropDownItems}>
+        <div className={[styles.dropDownItems, "z-60"].join(" ")}>
           {dropdownItems.map((el, i) => (
             <p
               className={[
