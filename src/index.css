@@ -38,3 +38,7 @@ input[type="radio"] ~ label:hover {
   --tw-border-opacity: 1;
   border-color: rgb(28 100 242 / var(--tw-border-opacity));
 }
+.border-blue-1200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(195 233 255 / var(--tw-border-opacity));
+}
