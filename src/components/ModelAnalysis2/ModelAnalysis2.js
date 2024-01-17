@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import ModelMetrics from "./ModelMetrics/ModelMetrics";
-import AnalysisTool from "./AnalysisTool/AnalysisTool";
-import Versions from "./Versions/Versions";
-import Header from "../Header/Header";
 
-const ModelAnalysis2 = () => {
-  const [activeTab, setActiveTab] = useState("Model metrics");
-  const tabs = ["Model metrics", "Analysis tools", "Versions"];
+import Header from "../Header/Header";
+import ModelPrediction from "./ModelPrediction/ModelPrediction";
+
+const ModelAnalysis2 = ({ title, tabs, info }) => {
+  const [activeTab, setActiveTab] = useState(tabs[0]);
+
   return (
     <div className="px-10 mt-28">
       <div className="rounded-xl bg-white relative w-[450px]">
         <div className="border-[3px] border-solid border-blue-800 rounded-xl">
-          <Header title="Modal analysis" />
+          <Header title={title} />
 
           <div>
             <div className="flex flex-col items-center justify-start px-5">
@@ -42,9 +41,15 @@ const ModelAnalysis2 = () => {
                 </ul>
               </div>
               <div className="w-full">
-                {activeTab === "Model metrics" && <ModelMetrics />}
-                {activeTab === "Analysis tools" && <AnalysisTool />}
-                {activeTab === "Versions" && <Versions />}
+                {activeTab === "Model metrics" && (
+                  <ModelPrediction {...info.modelMetrics} />
+                )}
+                {activeTab === "Analysis tools" && (
+                  <ModelPrediction {...info.analysisTools} />
+                )}
+                {activeTab === "Versions" && (
+                  <ModelPrediction {...info.versions} bg="bg-gray-50" />
+                )}
               </div>
             </div>
           </div>

@@ -2,36 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import { rightArrow } from "../../images/image";
 
-const ErrorSlices = () => {
-  const data = [
-    {
-      heading: "Slice 1",
-      percentage: "12.7%",
-      info: "Low model confidence (margin distance > 0.5) + Similar data in an embedding cluster",
-      example: {
-        totalExample: 102,
-        to: "#",
-      },
-    },
-    {
-      heading: "Slice 2",
-      percentage: "12.7%",
-      info: "Ground Truth = Employment, Model prediction = Services",
-      example: {
-        totalExample: 102,
-        to: "#",
-      },
-    },
-    {
-      heading: "Slice 3",
-      percentage: "11.3%",
-      info: "Similar data in an embedding cluster",
-      example: {
-        totalExample: 91,
-        to: "#",
-      },
-    },
-  ];
+const ErrorSlices = ({ data }) => {
   return (
     <div className="px-10 -mt-[320px] -ml-[25px] relative z-50">
       <div className="rounded-xl bg-white relative w-[480px]">
