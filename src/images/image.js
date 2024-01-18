@@ -1,4 +1,3 @@
-import shape2 from "./Shape2.png";
 import rightArrow from "./right-arrow.svg";
 import refresh from "./refresh.svg";
 import info from "./info.svg";
@@ -8,7 +7,6 @@ import downSolid from "./down-solid.svg";
 import chart from "./chart.png";
 import arrowUpRightFromSquareSolid from "./arrow-up-right-from-square-solid.svg";
 export {
-  shape2,
   rightArrow,
   refresh,
   info,

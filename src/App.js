@@ -7,7 +7,6 @@ import {
   filter,
   info,
   refresh,
-  shape2,
 } from "./images/image";
 
 function App() {
@@ -291,7 +290,7 @@ function App() {
         },
       },
     ],
-    shape: shape2,
+    bgShapeColor: "#e7fbfd",
   };
 
   return <MainComponent {...data} />;
