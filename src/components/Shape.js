@@ -9,7 +9,7 @@ const Shape = ({ bgShapeColor }) => {
       className="w-full"
     >
       <path
-        fill={bgShapeColor}
+        fill={bgShapeColor ? bgShapeColor : "#fff"}
         d="
   M 123.67 203.57
   Q 124.21 203.09 124.96 203.15

@@ -15,15 +15,19 @@ function App() {
       title: "Modal analysis",
       modelVerision: {
         label: "Current model",
-        versions: ["Model-1475", "Model-1476", "Model-1477", "Model-1478"],
+        versions: [
+          "Model-1475",
+          // "Model-1476", "Model-1477",
+          "Model-1478",
+        ],
       },
       devDropdown: {
         title: "Dev",
         dropdownItems: [
           { item: "Dashboard", to: "#" },
           { item: "Settings", to: "#" },
-          { item: "Earnings", to: "#" },
-          { item: "Sign out", to: "#" },
+          // { item: "Earnings", to: "#" },
+          // { item: "Sign out", to: "#" },
         ],
       },
       accuracyDropdown: {
@@ -32,15 +36,15 @@ function App() {
           { item: "Dashboard", to: "#" },
           { item: "Settings", to: "#" },
           { item: "Earnings", to: "#" },
-          { item: "Sign out", to: "#" },
+          // { item: "Sign out", to: "#" },
         ],
       },
       specification: {
         tableHeading: ["", "Dev", "Valid", "Test"],
         tableData: [
-          { title: "Accuracy", dev: "95.7%", valid: "94.9%", test: "95.1%" },
+          // { title: "Accuracy", dev: "95.7%", valid: "94.9%", test: "95.1%" },
           { title: "Recall", dev: "93.5%", valid: "89.7%", test: "90.0%" },
-          { title: "F1", dev: "89.2", valid: "89.6", test: "87.2" },
+          // { title: "F1", dev: "89.2", valid: "89.6", test: "87.2" },
         ],
       },
       versionInfo: {
@@ -59,8 +63,8 @@ function App() {
       info: {
         modelMetrics: {
           modelVersions: [
-            "Clarity Matrix",
-            "Model-1476",
+            // "Clarity Matrix",
+            // "Model-1476",
             "Model-1477",
             "Model-1478",
           ],
@@ -69,8 +73,8 @@ function App() {
             icons: {
               filterIcon: filter,
               refreshIcon: refresh,
-              downloadIcon: download,
-              shareIcon: arrowUpRightFromSquareSolid,
+              // downloadIcon: download,
+              // shareIcon: arrowUpRightFromSquareSolid,
             },
             incorectPrediction: {
               label: "Incorrect",
@@ -105,16 +109,16 @@ function App() {
             correctPrediction: {
               label: "Correct",
               details: [
-                {
-                  id: 4,
-                  info: "Model corrects incorrect LF outputs",
-                  color: "#bfdbfe",
-                },
-                {
-                  id: 69,
-                  info: "Model fits to correct LF outputs",
-                  color: "#a4cafe",
-                },
+                // {
+                //   id: 4,
+                //   info: "Model corrects incorrect LF outputs",
+                //   color: "#bfdbfe",
+                // },
+                // {
+                //   id: 69,
+                //   info: "Model fits to correct LF outputs",
+                //   color: "#a4cafe",
+                // },
                 {
                   id: 4,
                   info: "Model generalizes beyond LFs",
@@ -143,14 +147,14 @@ function App() {
             incorectPrediction: {
               label: "Incorrect",
               details: [
-                {
-                  id: 15,
-                  suggestion: {
-                    label: "Suggestion",
-                    info: "Refine Exiting LFs",
-                  },
-                  color: "#fbcfe8",
-                },
+                // {
+                //   id: 15,
+                //   suggestion: {
+                //     label: "Suggestion",
+                //     info: "Refine Exiting LFs",
+                //   },
+                //   color: "#fbcfe8",
+                // },
                 {
                   id: 0,
                   suggestion: {
@@ -210,14 +214,14 @@ function App() {
             incorectPrediction: {
               label: "Incorrect",
               details: [
-                {
-                  id: 15,
-                  suggestion: {
-                    label: "Suggestion",
-                    info: "Refine Exiting LFs",
-                  },
-                  color: "#fbcfe8",
-                },
+                // {
+                //   id: 15,
+                //   suggestion: {
+                //     label: "Suggestion",
+                //     info: "Refine Exiting LFs",
+                //   },
+                //   color: "#fbcfe8",
+                // },
                 {
                   id: 0,
                   suggestion: {
@@ -271,26 +275,27 @@ function App() {
           to: "#",
         },
       },
-      {
-        heading: "Slice 2",
-        percentage: "12.7%",
-        info: "Ground Truth = Employment, Model prediction = Services",
-        example: {
-          totalExample: 102,
-          to: "#",
-        },
-      },
-      {
-        heading: "Slice 3",
-        percentage: "11.3%",
-        info: "Similar data in an embedding cluster",
-        example: {
-          totalExample: 91,
-          to: "#",
-        },
-      },
+      // {
+      //   heading: "Slice 2",
+      //   percentage: "12.7%",
+      //   info: "Ground Truth = Employment, Model prediction = Services",
+      //   example: {
+      //     totalExample: 102,
+      //     to: "#",
+      //   },
+      // },
+      // {
+      //   heading: "Slice 3",
+      //   percentage: "11.3%",
+      //   info: "Similar data in an embedding cluster",
+      //   example: {
+      //     totalExample: 91,
+      //     to: "#",
+      //   },
+      // },
     ],
-    bgShapeColor: "#e7fbfd",
+    bgShapeColor: "#E1F0DA",
+    //#e7fbfd
   };
 
   return <MainComponent {...data} />;

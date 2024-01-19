@@ -15,43 +15,51 @@ const ModelPrediction = ({ modelVersions, modelPrediction, bg }) => {
           />
         </div>
         <div className="w-[40%] pl-5">
-          <ul className="flex items-center justify-between">
-            <li>
-              <a href="#/">
-                <img
-                  src={modelPrediction.icons.filterIcon}
-                  className="w-5"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#/">
-                <img
-                  src={modelPrediction.icons.refreshIcon}
-                  className="w-5"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#/">
-                <img
-                  src={modelPrediction.icons.downloadIcon}
-                  className="w-5"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li>
-              <a href="#/">
-                <img
-                  src={modelPrediction.icons.shareIcon}
-                  className="w-5"
-                  alt=""
-                />
-              </a>
-            </li>
+          <ul className="flex items-center justify-end gap-4">
+            {modelPrediction.icons.filterIcon && (
+              <li>
+                <a href="#/">
+                  <img
+                    src={modelPrediction.icons.filterIcon}
+                    className="w-5"
+                    alt=""
+                  />
+                </a>
+              </li>
+            )}
+            {modelPrediction.icons.refreshIcon && (
+              <li>
+                <a href="#/">
+                  <img
+                    src={modelPrediction.icons.refreshIcon}
+                    className="w-5"
+                    alt=""
+                  />
+                </a>
+              </li>
+            )}
+            {modelPrediction.icons.downloadIcon && (
+              <li>
+                <a href="#/">
+                  <img
+                    src={modelPrediction.icons.downloadIcon}
+                    className="w-5"
+                    alt=""
+                  />
+                </a>
+              </li>
+            )}
+            {modelPrediction.icons.shareIcon && (
+              <li>
+                <a href="#/">
+                  <img
+                    src={modelPrediction.icons.shareIcon}
+                    className="w-5"
+                    alt=""
+                  />
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </div>
@@ -59,7 +67,7 @@ const ModelPrediction = ({ modelVersions, modelPrediction, bg }) => {
         <h5 className="text-sm font-semibold text-center text-gray-500">
           {modelPrediction.label}
         </h5>
-        <div className="flex flex-wrap items-center justify-between">
+        <div className="flex flex-wrap items-start justify-between">
           <div className="w-1/2">
             <p className="text-center text-sm text-gray-500 font-bold pb-3 pt-2">
               {modelPrediction.incorectPrediction.label}
